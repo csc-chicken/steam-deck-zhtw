@@ -42,6 +42,7 @@ read -p "語言包已安裝，請檢查以上語言包有沒有安裝成功（su
 read -p "以下安裝桌面翻譯套件，請按Enter繼續"
 sudo pacman -S ki18n --noconfirm
 sudo pacman -S plasma --noconfirm
+sudo pacman -S kde-system --noconfirm
 read -p "以下最後同步軟體庫但是不更新，更新是官方的事，能理解請按Enter繼續"
 sudo pacman -Sy
 # 重新安裝所有程式
