@@ -39,12 +39,25 @@ read -p "語言包已安裝，請檢查以上語言包有沒有安裝成功（su
 #瞭解後請按Enter 繼續，"
 
 # 安裝程式: kde翻譯套件、plasma
-read -p "以下安裝桌面翻譯套件，請按Enter繼續"
+read -p "以下安裝桌面翻譯套件,重要內建軟體也會重新安裝並中文化，請按Enter繼續"
+echo "安裝中文化桌面環境元件"
+sleep 2
 sudo pacman -S ki18n --noconfirm #中文化桌面環境元件
+echo "安裝plasma 桌面"
+sleep 2
 sudo pacman -S plasma --noconfirm #plasma 桌面
+echo "安裝kde 系統應用, 重點為dolphin文件管理 跟 分割區管理員"
+sleep 2
 sudo pacman -S kde-system --noconfirm #kde 系統應用安裝中化（重點為dolphin 跟 分割區管理員中文化）
+echo "安裝內建文字編輯器"
+sleep 2
 sudo pacman -S kate --noconfirm #內建文字編輯器中文化
+echo "安裝終端機"
+sleep 2
 sudo pacman -S konsole --noconfirm #終端機中文化
+echo "安裝okular 文件檢視器"
+sleep 2
+sudo pacman -S okular --noconfirm #okular 文件檢視器
 read -p "以下最後同步軟體庫但是不更新，更新是官方的事，能理解請按Enter繼續"
 sudo pacman -Sy
 # 重新安裝所有程式
