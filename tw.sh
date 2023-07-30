@@ -40,9 +40,11 @@ read -p "語言包已安裝，請檢查以上語言包有沒有安裝成功（su
 
 # 安裝程式: kde翻譯套件、plasma
 read -p "以下安裝桌面翻譯套件，請按Enter繼續"
-sudo pacman -S ki18n --noconfirm
-sudo pacman -S plasma --noconfirm
-sudo pacman -S kde-system --noconfirm
+sudo pacman -S ki18n --noconfirm #中文化桌面環境元件
+sudo pacman -S plasma --noconfirm #plasma 桌面
+sudo pacman -S kde-system --noconfirm #kde 系統應用安裝中化（重點為dolphin 跟 分割區管理員中文化）
+sudo pacman -S kate --noconfirm #內建文字編輯器中文化
+sudo pacman -S konsole --noconfirm #終端機中文化
 read -p "以下最後同步軟體庫但是不更新，更新是官方的事，能理解請按Enter繼續"
 sudo pacman -Sy
 # 重新安裝所有程式
