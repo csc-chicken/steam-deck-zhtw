@@ -19,7 +19,8 @@ read -p "若已經了解以上風險，請按Enter 繼續，不行請按Ctrl+C �
 # 停用 唯讀模式
 sudo steamos-readonly disable
 # 使用 rwfus
-git clone https://github.com/ValShaped/rwfus.git
+#git clone https://github.com/ValShaped/rwfus.git
+git clone https://github.com/csc-chicken/rwfus #有自已config 的repo讚啦！google chrome 中文化的最後一哩路
 cd rwfus
 sudo sh ./rwfus -iI
 read -p "Rwfus 已安裝，請檢查以上Rwfus有沒有安裝成功（success)，有請按Enter,沒有請按Ctrl+C 中止"
