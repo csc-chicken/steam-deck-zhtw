@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=steam deck 永久中文化
+Comment=no
+#Exec=bash -c 'cd $(dirname %k) && ./SCRIPT_NAME; read;'
+Exec=bash -c 'cd $(dirname %k);echo "$PWD";sudo sh ./tw.sh; read;'
+#Exec=bash -c 'cd $(dirname %k); ./tw.sh; read;'
+Icon=./deck.png
+Terminal=true
+Type=Application  
