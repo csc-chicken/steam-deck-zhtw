@@ -2,6 +2,6 @@
 Name=steam deck 永久中文化
 Comment=
 Exec=sh ./tw.sh
-Icon=./deck.jpg
+Icon=./deck.png
 Terminal=true
 Type=Application  
