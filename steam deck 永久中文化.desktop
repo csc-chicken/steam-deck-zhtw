@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=steam deck 永久中文化
+Comment=
+Exec=sh ./tw.sh
+Icon=./deck.jpg
+Terminal=true
+Type=Application  
